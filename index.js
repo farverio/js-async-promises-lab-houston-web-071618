@@ -5,3 +5,34 @@ const questions = [
 ]
 
 let question;
+let questionContainer = document.querySelector('#question-container')
+let 
+
+function appendQuestion(question) {
+  questionContainer.innerHTML = += question
+}
+
+function askQuestionThen(time) {
+  question = question[0]
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res(question)
+    }, time)
+  })
+}
+
+function removeQuestion() {
+  
+}
+
+function askQuestionThenRemoveQuestion() {
+  
+}
+
+function toggleTrueAndFalseButtons() {
+  class="section center-align true-false-list"
+}
+
+function displayQuestionOnClick() {
+  
+}
