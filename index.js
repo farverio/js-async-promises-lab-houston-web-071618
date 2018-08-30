@@ -4,12 +4,14 @@ const questions = [
   {questionText: "Goldfish only have a memory of about three seconds", answer: false}
 ]
 
-let question;
-let questionContainer = document.querySelector('#question-container')
-let 
+const questionContainer = document.querySelector('.question-container')
+const trueAndFalseButtons = document.querySelector('.true-false-list')
+let hidingButtonsFlag = true
+const askButton = document.querySelector('.waves-effect')
+
 
 function appendQuestion(question) {
-  questionContainer.innerHTML = += question
+  questionContainer.innerHTML = question
 }
 
 function askQuestionThen(time) {
@@ -22,17 +24,23 @@ function askQuestionThen(time) {
 }
 
 function removeQuestion() {
-  
+
 }
 
 function askQuestionThenRemoveQuestion() {
-  
+
 }
 
 function toggleTrueAndFalseButtons() {
-  class="section center-align true-false-list"
+  trueAndFalseButtons.childrenNode.classList.remove('hide')
+
+  setInterval(()=> {
+    trueAndFalseButtons.childrenNode.classList.add('hide')
+  }, 5000)
 }
 
 function displayQuestionOnClick() {
-  
+  console.log("hello")
 }
+
+askButton.addEventListener('click', ()=> displayQuestionOnClick)
